@@ -1,0 +1,7 @@
+{
+	"connection": "wifi",
+	"updateDelay": "10",
+	"threshold": "5000",
+	"bufferStreamingWait": "5000",
+	"optIn": true
+}

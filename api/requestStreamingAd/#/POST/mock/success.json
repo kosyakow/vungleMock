@@ -1,0 +1,50 @@
+{
+	"id": "54e65a6a45bf663225000e66",
+	"campaign": "533b4ccb51b52a213d00000b|533b52b50adba7233d000008|datasci-stable",
+	"callToActionUrl": "http://CLICKTRACKING.com",
+	"countdown": 2,
+	"showClose": 3,
+	"cta_overlay": {
+		"time_enabled": 0,
+		"time_show": 5,
+		"enabled": true,
+		"click_area": 1
+	},
+	"expiry": 1424386170,
+	"app_id": "$0${\"app_id\":\"533b484c498b8bc03b000007\",\"eventID\":\"54e65a6a45bf663225000e66\"}",
+	"callToActionDest": "http://CTA.com",
+	"showCloseIncentivized": 3,
+	"delay": 0,
+	"shouldStream": true,
+	"url": "http://playtime.tubemogul.com/ad_promoted_videos/2990178_g8IH35Q4vZ2NxCLal6xx_1365033886.mp4",
+	"videoWidth": "400",
+	"videoHeight": "300",
+	"size": 42,
+	"tpat": {
+		"play_percentage": [{
+			"checkpoint": "0",
+			"urls": ["http://tpat-server-69623.usw1.nitrousbox.com/creativeStart?isu=%isu%&timestamp=%timestamp%&country=%country%", "http://creativeStart_1.com", "http://creativeStart_2.com", "http://creativeStart_3.com", "http://creativeStart_4.com", "http://rtb-lb-event-us-west.tubemogul.com/rtb/e.png?e=win&aid=D5_lz2RRQC-s4aIBajO9EQ.0&ad=53420028&cp=169958&slot=0&x_price=0.05&ets=1393288780893&tz=GMT-05%3A00&source=vast2&suid=2716559818041108049&country=US&region=CA&mc=48&ap=0&ut=0&vis=UNKNOWN&site=yASkYONirZAZUs1LpLGQ&bp=50000&curr=USD&exr=1.0&fid=4Q2kvGglmcypLHRHFSU6&c=2737372&ccurr=USD&cuxr=1.0&a=444002&ca=460168&st=INSTREAM_MOBILE_VAST_INTER&sh=0&sw=0&rid=4183&mp=533&dur=30&metroid=169&countryid=232&postalid=40415&v=1&auth=FkzzQPreWcJ4mgNVvNTof6Nv3aI&x_r=Mmrelg", "http://stats.tubemogul.com/stats/1/view?sessId=D5_lz2RRQC-s4aIBajO9EQ.0&paId=AjdrLodvAHvhxxnhD8cj&dur=15&date=1393288780893&auth=0d97084b20e4e10e8528a98cdba9efee&psId=yASkYONirZAZUs1LpLGQ&price=0.05&bi=B059MdaC4p2cFrvehaAqTFVBZ0yI9GEaZbV2sedBpRJ8DaWk9c5VqV1oaH1mOE0f9rKzJmTUzO8PnsUa4rOId_gpks0UPW-ysCqEzRg12oExEFOrCsCYJsm376Ur4bDZOJc", "http://ad-audit.tubemogul.com/audit/e.png?event=comscore", "http://ad-audit.tubemogul.com/audit/e.png?event=view&mp=4Q2kvGglmcypLHRHFSU6&cp=Zv3JbIaFVctVm8jTQkat&pa=AjdrLodvAHvhxxnhD8cj&psId=yASkYONirZAZUs1LpLGQ&rand=87344010", "http://lenta.ru"]
+		}, {
+			"checkpoint": "1",
+			"urls": ["http://CreativeComplete_1.com", "http://CreativeComplete_2.com", "http://CreativeComplete_3.com", "http://CreativeComplete_4.com", "http://CreativeComplete_5.com", "http://tpat-server-69623.usw1.nitrousbox.com/videocomplete?isu=%isu%&timestamp=%timestamp%&country=%country%", "http://Complete.com"]
+		}, {
+			"checkpoint": "0.25",
+			"urls": ["http://1stquartile_1.com", "http://1stquartile_1.com", "http://tpat-server-69623.usw1.nitrousbox.com/firstquartile?isu=%isu%&timestamp=%timestamp%&country=%country%", "http://1st.com", "http://tpat-server-69623.usw1.nitrousbox.com:/firstquartile?isu=%isu%&timestamp=%timestamp%&country=%country%"]
+		}, {
+			"checkpoint": "0.5",
+			"urls": ["http://MidpointQuartile_1.com", "http://MidpointQuartile_2.com", "http://tpat-server-69623.usw1.nitrousbox.com/midpoint?isu=%isu%&timestamp=%timestamp%&country=%country%", "http://Midpoint.com"]
+		}, {
+			"checkpoint": "0.75",
+			"urls": ["http://3dQuartile_1.com", "http://3dQuartile_2.com", "http://tpat-server-69623.usw1.nitrousbox.com/thirdquartile?isu=%isu%&timestamp=%timestamp%&country=%country%", "http://3d.com"]
+		}],
+		"mute": ["http://VideoMute_1.com", "http://VideoMute_2.com", "http://tpat-server-69623.usw1.nitrousbox.com/mute?isu=%isu%&timestamp=%timestamp%&country=%country%", "http://Mute.com"],
+		"video_close": ["http://VideoClosed_1.com", "http://VideoClosed_2.com", "http://tpat-server-69623.usw1.nitrousbox.com/videoclose?isu=%isu%&timestamp=%timestamp%&country=%country%", "http://VideoClosed.com"],
+		"unmute": ["http://Unmute.com"],
+		"postroll_click": ["http://PostRollCilck.com"],
+		"postroll_view": ["http://PostrollView.com"]
+	},
+	"md5": "fake_md5",
+	"chk": "d03cc669a434da88fc78c51031fdcba2",
+	"retryCount": 3,
+	"asyncThreshold": 40
+}

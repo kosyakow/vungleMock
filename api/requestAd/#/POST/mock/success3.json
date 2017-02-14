@@ -1,0 +1,59 @@
+{
+    "id": "588f6173db9d4e70ad69039a",
+    "adType": "vungle_mraid",
+    "campaign": "5494b417107fe69e24ac6011|5494b417107fe69e24ac6012|VungleMraid",
+    "expiry": "1488383603",
+    "app_id": "ios_vungle_test",
+    "delay": 0,
+    "templateSettings": {
+        "normal_replacements": {
+            "NO_ENDCARD_REQUIRED": "false",
+            "VIDEO_SHOW_CTA": "true",
+            "ENDCARD_SHOW_CTA": "true",
+            "APP_NAME": "Game of War",
+            "APP_DESCRIPTION": "War on!",
+            "CTA_BUTTON_TEXT_COLOR": "#ee1289",
+            "CTA_BUTTON_BACKGROUND": "#5de468",
+            "CTA_BUTTON_BORDER": "#9150f9",
+            "CTA_BUTTON_TEXT": "DL it on Win!",
+            "CTA_BUTTON_URL": "https://www.microsoft.com/en-us/store/apps/facebook/9wzdncrfj2wl",
+            "BUTTON_COLOR": "#00c5cd",
+            "CLOSE_BUTTON_DELAY_SECONDS": "5",
+            "DOWNLOAD_BUTTON_DELAY_SECONDS": "1",
+            "FRAME_SIZE": "25",
+            "OPACITY": "0",
+            "INCENTIVIZED_TITLE_TEXT": "Close this ad?",
+            "INCENTIVIZED_BODY_TEXT": "Are you sure you want to skip this ad? You must finish watching to claim your reward.",
+            "INCENTIVIZED_CLOSE_TEXT": "Close",
+            "INCENTIVIZED_CONTINUE_TEXT": "Continue",
+            "FONT_NAME": "Open San",
+            "FONT_TYPE": "truetype",
+            "VUNGLE_PRIVACY_URL": "https://vungle.com/privacy/",
+            "ACTION_TRACKING":"false"
+        },
+        "cacheable_replacements": {
+            "MAIN_VIDEO":{
+                "url":"https://cdn-lb.vungle.com/zen/MJP_promo_2016_15s_APPSTORE_1920x1080-1024x576-Q2.mp4",
+                "extension":"mp4"
+            },
+        }
+    },
+    "tpat": {
+        "checkpoint.0": [ "http://localhost:3001/api/v3/new", "http://localhost:3001/api/v3/new" ],
+        "checkpoint.25": [ "http://localhost:3001/api/v3/new" ],
+        "checkpoint.50": [ "http://localhost:3001/api/v3/new"],
+        "checkpoint.75": [ "http://localhost:3001/api/v3/new" ],
+        "checkpoint.100": [ "http://localhost:3001/api/v3/new" ],
+        "video.close": [ "http://localhost:3001/api/v3/new" ],
+        "postroll.view": [ "http://localhost:3001/api/v3/new" ],
+        "postroll.click": [ "http://localhost:3001/api/v3/new" ]
+    },
+    
+    "templateURL": "http://localhost:3002/templateURL.zip",
+    "templateURL1": "http://vvv-qa.s3.amazonaws.com/mraid/index.zip",
+    "templateURL2": "http://vvv-qa.s3.amazonaws.com/templates/56eb0a14c81287cc5f0002f5-v0/framedUnit-4.0.3.zip",
+    "md5": "fake_md5",
+    "chk": "d03cc669a434da88fc78c51031fdcba2",
+    "retryCount": 3,
+    "asyncThreshold": 40
+}

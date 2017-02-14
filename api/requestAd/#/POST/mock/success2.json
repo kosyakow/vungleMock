@@ -1,0 +1,39 @@
+{
+  "id": "abc2",
+    "adType": "vungle_mraid",
+      "campaign": "abc2",
+        "callToActionUrl": "http://clk.atdmt.com/6JQ/go/467523537/direct/01/test1/",
+          "app_id": "5249fdaa1d320d4364000027",
+            "countdown": 4,
+              "showClose": 4,
+                "showCloseIncentivized": 4,
+                  "expiry": 3137964055,
+                    "delay": 0,
+                      "postBundle": "http://cds.g8j8b9g6.hwcdn.net/bundles/524a01dc997fc17a42000008-2.zip",
+                        "url": "http://cds.g8j8b9g6.hwcdn.net/zen/9262013_FebrezeNT_PGFG2686000D_15s_PD_Universal_High%20%281%29-1280x720-Q2.mp4",
+                          "videoWidth": 640,
+                            "videoHeight": 360,
+                              "md5": "a3309adb7857f1c98b86f8d99dd31f48",
+                                "size": 951348,
+                                  "chk": "eb65d44f91a3f6cf7b35fdd6d576cd3c",
+                                    "retryCount": 3,
+                                      "asyncThreshold": 40,
+                                        "tpat": {
+                                            "play_percentage": 
+                                                  [
+                                                          {"checkpoint": 0, "urls": ["http://checkpoint1-1.com", "http://checkpoint1-2.com"]},
+                                                                  {"checkpoint": 0.25, "urls": ["http://checkpoint2-1.com"]},
+                                                                          {"checkpoint": 0.5, "urls": ["http://checkpoint3-1.com"]},
+                                                                                  {"checkpoint": 0.75, "urls": ["http://checkpoint4-1.com"]},
+                                                                                          {"checkpoint": 1.0, "urls": ["http://checkpoint5-1.com"]}
+                                                                                                ],
+                                                                                                    "mute": ["http://mute1.com", "http://mute2.com"],
+                                                                                                        "unmute": ["http://unmute1.com", "http://unmute2.com", "http://unmute3.com"],
+                                                                                                            "video_close": [],
+                                                                                                                "postroll_click": ["http://postrollclick1.com", "http://postrollclick2.com"],
+                                                                                                                    "postroll_view": ["http://postrollview1.com", "http://postrollview2.com"]
+                                                                                                                      },
+                                                                                                                        "templateId": "templateId1234",
+                                                                                                                          "templateSettings": {"normal_replacements": {},"cacheable_replacements": {}},
+                                                                                                                            "templateURL": "http://vvv-qa.s3.amazonaws.com/mraid/index.zip"       
+                                                                                                                            }

@@ -1,91 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        
-        <meta charset="utf-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                    <meta name="description" content="">
-                        <meta name="author" content="">
-                            
-                            <title>Bare - Start Bootstrap Template</title>
-                            
-                            <!-- Bootstrap Core CSS -->
-                            <link href="http://34.199.55.75:3002/webview/css/bootstrap.min.css" rel="stylesheet">
-                                <style>
-                                    #video-container{
-                                        position:absolute;
-                                        bottom:0;
-                                        left:0;
-                                    }
-                                #video-container-inner{
-                                    max-height:0;
-                                    overflow:hidden;
-                                    transition-property: all;
-                                    transition-duration: 2s;
-                                    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-                                }
-                                .video-close-button {
-                                    background-image:url(https://cdn.shopify.com/s/files/1/1367/9895/t/4/assets/close-button.png?1618980611971289196);
-                                    background-repeat:no-repeat;
-                                    width:10%;
-                                    height:10%;
-                                    position:absolute;
-                                    left:90%;
-                                    top:10%;
-                                    margin:auto;
-                                    background-size:contain;
-                                    background-position: center;
-                                }
-                                </style>
-                                <script>
-                                    function videoClose() {
-                                        $("#video-container-inner").css("display","none")
-                                        $("#postrol-container").css("display","block")
-                                        document.getElementById('mraidVideo').pause();
-                                    }
-                                function postrolClose() {
-                                    $("#postrol-container").css("display","none")
-                                    window.location.href = "mraid://close";
-                                }
-                                </script>
-                                
-    </head>
-    
-    <body style="background-color:transparent;">
-        <!-- /.container -->
-        <div id="video-container" style="">
-            <div id="video-container-inner">
-                <video id="mraidVideo" width="100%" autoplay playsinline webkit-playsinline>
-                    
-                    <!--source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4"-->
-                    <!--source src="ad.mp4" type="video/mp4"-->
+		<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<meta name="description" content="">
+			<meta name="author" content="">
+			<title>Bare - Start Bootstrap Template</title>
+			<!-- Bootstrap Core CSS -->
+			<link href="http://34.199.55.75:3002/webview/css/bootstrap.min.css" rel="stylesheet">
+			<style>
+					#video-container{
+							position:absolute;
+							bottom:0;
+							left:0;
+							width:100%;
+					}
+					#video-container-inner{
+							max-height:0;
+							overflow:hidden;
+							transition-property: all;
+							transition-duration: 2s;
+							transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+					}
+					#mraidVideo{
+							display:block;
+							min-width:100vw;
+							height:calc(100vh / 3);
+					}
+					.video-close-button {
+							background-image:url(https://cdn.shopify.com/s/files/1/1367/9895/t/4/assets/close-button.png?1618980611971289196);
+							background-repeat:no-repeat;
+							width:10%;
+							height:10%;
+							position:absolute;
+							left:90%;
+							top:10%;
+							margin:auto;
+							background-size:contain;
+							background-position: center;
+					}
+			</style>
+			<script>
+					function videoClose() {
+							$("#video-container-inner").css("display","none")
+							$("#postrol-container").css("display","block")
+							document.getElementById('mraidVideo').pause();
+					}
+					function postrolClose() {
+							$("#postrol-container").css("display","none")
+							window.location.href = "mraid://close";
+					}
+					if (window.addEventListener) {
+							window.addEventListener("message", onMessage, false);
+					}
+					else if (window.attachEvent) {
+							window.attachEvent("onmessage", onMessage, false);
+					}
 
-                        <source src="http://cds.g8j8b9g6.hwcdn.net/zen/9262013_FebrezeNT_PGFG2686000D_15s_PD_Universal_High%20%281%29-1280x720-Q2.mp4" type="video/mp4">
-                        Your browser doesn't support HTML5 video tag.
-                        </video>
-                <div class="video-close-button" onclick="videoClose()"></div>
-            </div>
-            <div id="postrol-container" style="display:none;height:180px;width:100vw;background-image:url(http://cdn.messenger.pgsitecore.com/en-us/-/media/Febreze/Images/BE_Images/Desktop/BE_Detail/LEGO/DT_Learn_ART_Terracycle_Hero.jpg?h=320&w=680&la=en-US&v=1-201612062042);background-size:cover;">
-                <div class="video-close-button" onclick="postrolClose()"></div>
-            </div>
-        </div>
-        
-        <!-- jQuery Version 1.11.1 -->
-        <script src="http://34.199.55.75:3002/webview/js/jquery.js"></script>
-        
-        <script>
-            $(function(){
-              setTimeout(function(){$("#video-container-inner").css("max-height","180px")},500);
-              })
-              window.location.href = "mraid://useCustomClose?sdkCloseButton=invisible";
-              document.getElementById('mraidVideo').addEventListener('ended',myHandler,false);
-              function myHandler(e) {
-                  videoClose();
-                  window.location.href = "mraid://successfulView";
-              }
-            </script>
-    </body>
-    
+					function onMessage(event) {
+						postrolClose();
+					}
+			</script>
+		</head>
+		<body style="background-color:transparent;">
+				<!-- /.container -->
+				<div id="video-container" style="">
+						<div id="video-container-inner">
+								<video id="mraidVideo"  autoplay playsinline webkit-playsinline>
+									<source src="https://s3.amazonaws.com/vungle-static/ibotta_video.mp4" type="video/mp4">
+									Your browser doesn't support HTML5 video tag.
+								</video>
+								<div class="video-close-button" onclick="videoClose()"></div>
+						</div>
+						<div id="postrol-container" style="display:none;height:180px;width:100vw;">
+								<iframe style="border:0" src="https://s3.amazonaws.com/vungle-static/ibotta_endcard_interactive/index.html"></iframe>
+						</div>
+				</div>
+				<!-- jQuery Version 1.11.1 -->
+				<script src="http://34.199.55.75:3002/webview/js/jquery.js"></script>
+				<script>
+					$(function(){
+						setTimeout(function(){
+							$("#video-container-inner").css("max-height","30%");
+							var videoW = $("#mraidVideo").width(),
+									videoH = $("#mraidVideo").height(),
+									ovideoW = $("#mraidVideo").get(0).videoWidth,
+									ovideoH = $("#mraidVideo").get(0).videoHeight,
+									windowW = $(window).width();
+							var cvideoW = (ovideoW/ovideoH)*videoH;
+							if(videoW <  windowW ){
+									var oldR = videoW/videoH;
+									videoW = windowW;
+									videoH = videoW/oldR;
+							}
+							else if(cvideoW < videoW){
+									videoH = videoW*ovideoH/ovideoW;
+							}
+							var diff = windowW - videoW;
+							$("#video-container-inner").css("margin-left",diff/2+"px");
+							$("#mraidVideo").width(videoW).height(videoH);
+							$("#postrol-container").height($("#mraidVideo").height()).width(windowW);
+							$("#postrol-container iframe").height($("#mraidVideo").height()).width(windowW);
+						},500);
+					})
+					window.location.href = "mraid://useCustomClose?sdkCloseButton=invisible";
+					document.getElementById('mraidVideo').addEventListener('ended',myHandler,false);
+					function myHandler(e) {
+						videoClose();
+						window.location.href = "mraid://successfulView";
+					}
+			</script>
+		</body>
 </html>
